@@ -3,5 +3,12 @@ packages:
   - "admin"
   - "web"
   - "worker"
+allowBuilds:
+  '@tailwindcss/oxide': true
+  '@vercel/speed-insights': true
+  esbuild: true
+  protobufjs: true
+  sharp: true
+  simple-git-hooks: true
 
 minimumReleaseAge: 4320
