@@ -27,10 +27,10 @@ interface ProgressStepProps {
 
 // 基本ステップ定義
 const BASE_STEPS = [
-  { label: "法案\n提出" },
-  { label: "衆議院\n審議" },
-  { label: "参議院\n審議" },
-  { label: "法案\n成立" },
+  { label: "政策企画\n立案" },
+  { label: "総合調整\nマネジメント" },
+  { label: "執行\n現場管理" },
+  { label: "評価\nフィードバック" },
 ] as const;
 
 // ステータスバッジコンポーネント

@@ -20,7 +20,7 @@ export function getStatusMessage(
   status: BillStatusEnum,
   statusNote: string | null | undefined
 ): string {
-  if (status === "preparing") return "法案提出前";
+  if (status === "preparing") return "政策企画・立案前";
   return statusNote || "";
 }
 
