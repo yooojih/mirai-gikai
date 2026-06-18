@@ -6,7 +6,7 @@ export function Hero() {
     <div className="relative w-full h-[80vh] min-h-[400px] md:h-[70vh]">
       <Image
         src="/img/hero_background.jpg"
-        alt="緑豊かな森林"
+        alt="日本の山岳景観"
         fill
         priority
         className="object-cover"
