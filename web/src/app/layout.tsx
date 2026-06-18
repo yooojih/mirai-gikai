@@ -19,15 +19,14 @@ const lexendGiga = Lexend_Giga({
 
 const isDev = process.env.NODE_ENV === "development";
 const isStaging = process.env.VERCEL_TARGET_ENV === "staging";
-const siteTitle = "みらい議会｜チームみらい";
-const siteDescription =
-  "国会で今どんな法案が検討されているか、わかりやすく伝えるプラットフォーム";
-const siteName = "みらい議会";
+const siteTitle = "さくっと環境行政解説";
+const siteDescription = "環境行政の議論をわかりやすく伝えるプラットフォーム";
+const siteName = "さくっと環境行政解説";
 const ogImage = {
   url: "/ogp.jpg",
   width: 1200,
   height: 630,
-  alt: "みらい議会のOGPイメージ",
+  alt: "さくっと環境行政解説のOGPイメージ",
 };
 
 export const metadata: Metadata = {
@@ -75,7 +74,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
-  themeColor: "#2aa693",
+  themeColor: "#99cc33",
 };
 
 export default function RootLayout({
@@ -88,7 +87,7 @@ export default function RootLayout({
       <body
         className={`${notoSansJP.variable} ${lexendGiga.variable} font-sans antialiased bg-mirai-surface-light`}
       >
-        <NextTopLoader showSpinner={false} color="#2aa693" />
+        <NextTopLoader showSpinner={false} color="#99cc33" />
         {children}
       </body>
     </html>
