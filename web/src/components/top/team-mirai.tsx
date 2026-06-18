@@ -6,7 +6,7 @@ export function TeamMirai() {
       <div className="flex flex-col gap-6">
         {/* ヘッダー */}
         <div className="flex flex-col gap-4">
-          <h2 className="text-2xl font-extrabold font-lexend tracking-widest text-primary-accent">
+          <h2 className="text-4xl font-extrabold font-lexend tracking-widest text-black">
             EIC
           </h2>
           <p className="text-sm font-bold text-primary-accent">EICについて</p>
