@@ -1,4 +1,4 @@
-import { openai } from "@ai-sdk/openai";
+import { google } from "@ai-sdk/google";
 import type { Database } from "@mirai-gikai/supabase";
 import {
   convertToModelMessages,
@@ -100,7 +100,8 @@ export async function handleChatRequest({
     promptProvider
   );
   // Model configuration
-  const model = deps?.model ?? AI_MODELS.gpt4o;
+  const model =
+    deps?.model ?? google("gemini-2.0-flash", { useSearchGrounding: true });
   const modelName =
     typeof model === "string" ? model : (model.modelId ?? "unknown");
 
@@ -392,10 +393,8 @@ function buildSystemPromptWithInterviewInstructions(
  * チャットで使用するツール一覧を構築
  */
 function buildTools(shouldSuggestInterview: boolean) {
-  // biome-ignore lint/suspicious/noExplicitAny: OpenAI web_search tool type incompatibility
-  const tools: Record<string, any> = {
-    web_search: openai.tools.webSearch(),
-  };
+  // biome-ignore lint/suspicious/noExplicitAny: tool type
+  const tools: Record<string, any> = {};
 
   if (shouldSuggestInterview) {
     tools[SUGGEST_INTERVIEW_TOOL_NAME] = tool({
