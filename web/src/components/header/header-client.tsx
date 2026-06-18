@@ -36,7 +36,7 @@ export function HeaderClient({ difficultyLevel }: HeaderClientProps) {
                 width={42}
                 height={30}
               />
-              <span className="font-extrabold text-slate-800 text-sm leading-tight">
+              <span className="font-extrabold text-slate-800 text-base leading-tight">
                 さくっと環境行政解説
               </span>
             </Link>
