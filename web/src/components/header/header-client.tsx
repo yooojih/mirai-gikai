@@ -32,16 +32,13 @@ export function HeaderClient({ difficultyLevel }: HeaderClientProps) {
             >
               <Image
                 src="/img/logo.svg"
-                alt="みらい議会"
+                alt="さくっと環境行政解説ロゴ"
                 width={42}
-                height={36}
+                height={30}
               />
-              <Image
-                src="/img/service-logo.svg"
-                alt="みらい議会"
-                width={115}
-                height={21}
-              />
+              <span className="font-extrabold text-slate-800 text-sm leading-tight">
+                さくっと環境行政解説
+              </span>
             </Link>
           </div>
 
