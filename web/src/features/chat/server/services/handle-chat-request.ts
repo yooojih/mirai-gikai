@@ -101,7 +101,8 @@ export async function handleChatRequest({
   );
   // Model configuration
   const model =
-    deps?.model ?? google("gemini-2.0-flash", { useSearchGrounding: true });
+    deps?.model ??
+    google("gemini-2.5-flash-lite", { useSearchGrounding: true });
   const modelName =
     typeof model === "string" ? model : (model.modelId ?? "unknown");
 
